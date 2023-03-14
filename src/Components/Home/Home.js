@@ -1,7 +1,7 @@
 import { useState } from "react"
-import BooksList from "./BooksList";
-import Buttons from "./Buttons";
-import { data } from "./data";
+import BooksList from "../../BooksList";
+import Buttons from "../../Buttons";
+import { data } from "../../data";
 
 export default function Home () {
     const [booksList, setBooksList] = useState(data);
@@ -17,6 +17,7 @@ export default function Home () {
     
     return (
         <div>
+            HELLO
             <Buttons filterBooks={filterBooks} showAllList={showAllList}/>
             <BooksList booksList={booksList}/>
         </div>
